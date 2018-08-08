@@ -32,15 +32,12 @@ function average(numbers) {
 function intersection(array1, array2) {
   var commonElements = [];
   for (var i = 0; i < array1.length; i++) {
-    for (var item of array2) {
-      if (array1[i] === item) {
-        commonElements.push(item);
-        break;
+      if ((array2.includes(array1[i])) && !commonElements.includes(array1[i])) {
+        commonElements.push(array1[i]);
       }
     }
+    return commonElements;
   }
-  return commonElements;
-}
 
 // 4. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
