@@ -169,13 +169,13 @@ function averageAge(users, currentDate) {
   var ageTotal = 0;
   //add age for each user
   for (var i = 0; i < users.length; i++) {
-    let age = Math.floor(
+    var age = Math.floor(
       (currentDate.getTime() - users[i].dob.getTime()) / 31557600000
     );
     ageTotal += age;
   }
   //return sum of users ages and divide by length for average
-  return sum(users.age) / users.length;
+  return ageTotal / users.length;
 }
 }
 
