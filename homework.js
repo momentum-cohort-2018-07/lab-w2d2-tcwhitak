@@ -161,7 +161,6 @@ function createUsers(listNames, listDobs) {
 // You do not have to handle the situation in which the current date is before
 // a user's date of birth.
 
-//the code below fails the second test for 10
 function averageAge(users, currentDate) {
   if (users.length === 0) {
     return;
